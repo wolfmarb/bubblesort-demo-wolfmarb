@@ -1,8 +1,8 @@
 /*
 
-    Name: Your firstname and Lastname
-    Email: Your Campus02-Mail-Address
-    Matrikel-Number: Your Matrikel-Number
+    Name: Wolfgang Marbler
+    Email: 52210474@edu.campus02.at
+    Matrikel-Number: 52210474
 
  */
 
@@ -22,6 +22,18 @@ public class BubbleSort {
 
         https://de.wikipedia.org/wiki/Bubblesort#Algorithmus
          */
+
+        int temp;
+        for(int i=1; i<array.length; i++) {
+            for(int j=0; j<array.length-i; j++) {
+                if(array[j]>array[j+1]) {
+                    temp=array[j];
+                    array[j]=array[j+1];
+                    array[j+1]=temp;
+                }
+
+            }
+        }
 
 
 
